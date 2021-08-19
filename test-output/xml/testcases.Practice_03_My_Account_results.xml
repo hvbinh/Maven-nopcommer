@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run On CHROME UI"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="41.272">
+  <properties />
+  
+  
+            <testcase name="TC_03_Update_Password" time="9.771" classname="testcases.Practice_03_My_Account" />
+                <testcase name="TC_01_Verify_Customer_Info" time="9.524" classname="testcases.Practice_03_My_Account" />
+                <testcase name="TC_02_Add_Address" time="9.784" classname="testcases.Practice_03_My_Account" />
+                <testcase name="TC_04_Product_Review" time="12.193" classname="testcases.Practice_03_My_Account" />
+      
+</testsuite>

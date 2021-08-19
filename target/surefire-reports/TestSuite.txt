@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 29.096 s <<< FAILURE! - in TestSuite
+Tc_02_Register_Success(users.Level_19_Register_Login_Data_Test_02)  Time elapsed: 5.176 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'firstName' is required by @Test on method Tc_02_Register_Success but has not been marked @Optional or defined
+in D:\Workspace Intel\maven-nopcommer\src\test\resources\runUserTestcase.xml
+
+Tc_03_Login_Success(users.Level_19_Register_Login_Data_Test_02)  Time elapsed: 5.715 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'email' is required by @Test on method Tc_03_Login_Success but has not been marked @Optional or defined
+in D:\Workspace Intel\maven-nopcommer\src\test\resources\runUserTestcase.xml
+

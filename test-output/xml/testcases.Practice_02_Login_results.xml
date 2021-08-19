@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run On CHROME UI"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="35.188">
+  <properties />
+  
+  
+            <testcase name="TC_01_Login_In_With_Empty_Data" time="4.154" classname="testcases.Practice_02_Login" />
+                <testcase name="TC_03_Login_In_With_Has_Not_Register_Email" time="4.422" classname="testcases.Practice_02_Login" />
+                <testcase name="TC_04_Login_In_With_Register_Email_And_No_Password" time="15.161" classname="testcases.Practice_02_Login" />
+                <testcase name="TC_05_Login_In_With_Register_Email_And_wrong_Password" time="3.397" classname="testcases.Practice_02_Login" />
+                <testcase name="TC_02_Login_In_With_Invalid_Email" time="3.858" classname="testcases.Practice_02_Login" />
+                <testcase name="TC_06_Login_In_With_Register_Email_And_correct_Password" time="4.196" classname="testcases.Practice_02_Login" />
+      
+</testsuite>

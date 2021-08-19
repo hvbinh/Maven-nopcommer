@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run On CHROME UI"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="38.358">
+  <properties />
+  
+  
+            <testcase name="Tc_01_Register_With_Valid_Information" time="12.993" classname="testcases.Practice_01_Register" />
+                <testcase name="Tc_03_Register_With_Empty_Data" time="2.307" classname="testcases.Practice_01_Register" />
+                <testcase name="Tc_06_Register_Not_Match_Confirm_Password" time="6.106" classname="testcases.Practice_01_Register" />
+                <testcase name="Tc_04_Register_With_Invalid_Email" time="5.154" classname="testcases.Practice_01_Register" />
+                <testcase name="Tc_05_Register_Password_Under_6_Characters" time="5.040" classname="testcases.Practice_01_Register" />
+                <testcase name="Tc_02_Register_With_Existed_Email" time="6.758" classname="testcases.Practice_01_Register" />
+      
+</testsuite>

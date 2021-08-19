@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Nop Commerce - user]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="reportConfig.ExtentReportListenerVersion4"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Run On Chrome(failed)">
+    <parameter name="browser" value="chrome_ui"/>
+    <classes>
+      <class name="users.Level_19_Register_Login_Data_Test_02">
+        <methods>
+          <include name="Tc_02_Register_Success"/>
+          <include name="Tc_03_Login_Success"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- users.Level_19_Register_Login_Data_Test_02 -->
+    </classes>
+  </test> <!-- Run On Chrome(failed) -->
+</suite> <!-- Failed suite [Nop Commerce - user] -->

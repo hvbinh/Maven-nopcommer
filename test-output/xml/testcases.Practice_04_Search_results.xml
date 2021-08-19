@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run On CHROME UI"
+           tests="9"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="25.382">
+  <properties />
+  
+  
+            <testcase name="TC_03_Verify_Relative_Search" time="3.195" classname="testcases.Practice_04_Search" />
+                <testcase name="TC_05_Verify_Advance_Search_With_Parent_Category" time="4.028" classname="testcases.Practice_04_Search" />
+                <testcase name="TC_04_Verify_Absolute_Search" time="2.302" classname="testcases.Practice_04_Search" />
+                <testcase name="TC_07_Verify_Advance_Search_With_Incorrect_Manufacturer" time="2.775" classname="testcases.Practice_04_Search" />
+                <testcase name="TC_09_Verify_Advance_Search_Within_Price_Range" time="2.834" classname="testcases.Practice_04_Search" />
+                <testcase name="TC_08_Verify_Advance_Search_With_Correct_Manufacturer" time="3.167" classname="testcases.Practice_04_Search" />
+                <testcase name="TC_02_Verify_Search_With_Not_Exit_Data" time="1.577" classname="testcases.Practice_04_Search" />
+                <testcase name="TC_01_Verify_Search_With_Empty_Value" time="1.982" classname="testcases.Practice_04_Search" />
+                <testcase name="TC_06_Verify_Advance_Search_With_Sub_Category" time="3.522" classname="testcases.Practice_04_Search" />
+      
+</testsuite>

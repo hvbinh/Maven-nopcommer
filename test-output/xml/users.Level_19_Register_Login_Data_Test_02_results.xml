@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run On Chrome"
+           tests="3"
+           failures="2"
+           errors="0"
+           skipped="0"
+           time="5.877">
+  <properties />
+            <testcase name="Tc_02_Register_Success" time="0.000" classname="users.Level_19_Register_Login_Data_Test_02">
+                <failure type="org.testng.TestNGException"
+                  message="
+Parameter &apos;firstName&apos; is required by @Test on method Tc_02_Register_Success but has not been marked @Optional or defined
+in D:\Workspace Intel\maven-nopcommer\src\test\resources\runUserTestcase.xml"
+              >
+<![CDATA[org.testng.TestNGException: 
+Parameter 'firstName' is required by @Test on method Tc_02_Register_Success but has not been marked @Optional or defined
+in D:\Workspace Intel\maven-nopcommer\src\test\resources\runUserTestcase.xml
+  org.testng.internal.Parameters.createParams(Parameters.java:290)
+  org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+  org.testng.internal.Parameters.createParameters(Parameters.java:620)
+  org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+  org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+  org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+  org.testng.SuiteRunner.run(SuiteRunner.java:364)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+  org.testng.TestNG.runSuites(TestNG.java:1049)
+  org.testng.TestNG.run(TestNG.java:1017)
+  com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+  com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="Tc_03_Login_Success" time="0.000" classname="users.Level_19_Register_Login_Data_Test_02">
+                <failure type="org.testng.TestNGException"
+                  message="
+Parameter &apos;email&apos; is required by @Test on method Tc_03_Login_Success but has not been marked @Optional or defined
+in D:\Workspace Intel\maven-nopcommer\src\test\resources\runUserTestcase.xml"
+              >
+<![CDATA[org.testng.TestNGException: 
+Parameter 'email' is required by @Test on method Tc_03_Login_Success but has not been marked @Optional or defined
+in D:\Workspace Intel\maven-nopcommer\src\test\resources\runUserTestcase.xml
+  org.testng.internal.Parameters.createParams(Parameters.java:290)
+  org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+  org.testng.internal.Parameters.createParameters(Parameters.java:620)
+  org.testng.internal.Parameters.handleParameters(Parameters.java:769)
+  org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+  org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+  org.testng.TestRunner.privateRun(TestRunner.java:648)
+  org.testng.TestRunner.run(TestRunner.java:505)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+  org.testng.SuiteRunner.run(SuiteRunner.java:364)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+  org.testng.TestNG.runSuites(TestNG.java:1049)
+  org.testng.TestNG.run(TestNG.java:1017)
+  com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+  com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:110)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="Tc_01_Validate_At_Register" time="5.877" classname="users.Level_19_Register_Login_Data_Test_02" />
+      
+</testsuite>
