@@ -362,4 +362,11 @@ public class UserComputerPO extends AbstractPage{
 		}
 		return true;
 	}
+
+	public UserProductDetailPO clickToProductTitleByName(WebDriver driver, String productName) {
+			waitToElementClickable(driver, UserComputerPageUI.DYNAMIC_PRODUCT_NAME_BY_NAME, productName);
+			clickToElement(driver,UserComputerPageUI.DYNAMIC_PRODUCT_NAME_BY_NAME, productName);
+			return PageGeneratorManager.getUserProductDetailPO(driver);
+
+	}
 }

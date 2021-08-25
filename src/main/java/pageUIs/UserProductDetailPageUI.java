@@ -9,6 +9,8 @@ public class UserProductDetailPageUI {
 	public static final String QUANTITY_ORDER_BY_VALUE = "//div[@class='add-to-cart-panel']/input[contains(@id,'product_enteredQuantity')]";
 	public static final String SKU = "//div[@class='sku']/span[@class='value']";
 	public static final String PRICE = "//div[@class='product-price']/span";
+
+	public static final String ADD_TO_WISHLIST_BUTTON = "//div[@class='add-to-wishlist']/button";
 	
 	
 	

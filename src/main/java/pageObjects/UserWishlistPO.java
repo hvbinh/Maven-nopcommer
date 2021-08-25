@@ -16,9 +16,9 @@ public class UserWishlistPO extends AbstractPage{
 		this.driver = driver;
 	}
 
-	public String getProductName(String productClassName) {
-		waitToElementVisible(driver, UserWishlistPageUI.PRODUCT_NAME_BY_CLASS,productClassName);
-		return getElementText(driver, UserWishlistPageUI.PRODUCT_NAME_BY_CLASS,productClassName);
+	public String getProductName() {
+		waitToElementVisible(driver, UserWishlistPageUI.PRODUCT_NAME);
+		return getElementText(driver, UserWishlistPageUI.PRODUCT_NAME);
 	}
 
 	public String getSKU(String SKUClassName) {

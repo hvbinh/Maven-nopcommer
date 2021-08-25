@@ -17,10 +17,10 @@ public class UserCompareProductPO extends AbstractPage{
 		this.driver = driver;
 	}
 
-	public boolean compareProductDisplayByHref(String href) {
+	public boolean compareProductDisplayByProductName(String name) {
 		
-		waitToElementVisible(driver, UserCompareProductPageUI.DYNAMIC_PRODUCT_NAME_BY_HREF,href);
-		return isElementDisplayed(driver, UserCompareProductPageUI.DYNAMIC_PRODUCT_NAME_BY_HREF,href);
+		waitToElementVisible(driver, UserCompareProductPageUI.DYNAMIC_PRODUCT_NAME_BY_TEXT,name);
+		return isElementDisplayed(driver, UserCompareProductPageUI.DYNAMIC_PRODUCT_NAME_BY_TEXT,name);
 	}
 
 	public void hoverMouseToComputerHeader() {
@@ -35,4 +35,13 @@ public class UserCompareProductPO extends AbstractPage{
 		return PageGeneratorManager.getUserComputerPage(driver);
 	}
 
+	public void clickToClearListButton() {
+		waitToElementClickable(driver, UserCompareProductPageUI.CLEAR_LIST_BUTTON);
+		clickToElement(driver, UserCompareProductPageUI.CLEAR_LIST_BUTTON);
+	}
+
+	public boolean isNoDataMessageDisplay() {
+		waitToElementVisible(driver, UserCompareProductPageUI.NO_DATA_MESSAGE);
+		return isElementDisplayed(driver, UserCompareProductPageUI.NO_DATA_MESSAGE);
+	}
 }

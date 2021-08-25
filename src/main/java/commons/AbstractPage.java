@@ -593,11 +593,7 @@ public class AbstractPage {
 		waitToElementVisible(driver, AbstractPageUI.DYNAMIC_ERROR_MESSAGE_BY_ID, fieldID);
 		return getElementText(driver, AbstractPageUI.DYNAMIC_ERROR_MESSAGE_BY_ID, fieldID);
 	}
-	public UserProductDetailPO clickToProductTitleByName(WebDriver driver, String productName) {
-		waitToElementClickable(driver, AbstractPageUI.DYNAMIC_LINK_BY_NAME, productName);
-		clickToElement(driver,AbstractPageUI.DYNAMIC_LINK_BY_NAME, productName);
-		return PageGeneratorManager.getUserProductDetailPO(driver);
-	}
+
 	public boolean isDataFloatSortedAssending(WebDriver driver,String locator)
 	{
 		ArrayList<Float> arrayList = new ArrayList<>();
