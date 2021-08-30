@@ -15,7 +15,7 @@ public class UserComputerPageUI {
 	public static final String SOFTWARE_MICROSOFT_OFFICE_CHECKBOX = "//label[text()='Microsoft Office [+$50.00]']";
 	public static final String SOFTWARE_ACROBAT_READER_CHECKBOX = "//label[text()='Acrobat Reader [+$10.00]']";
 	public static final String SOFTWARE_TOTAL_COMMANDER_CHECKBOX = "//label[text()='Total Commander [+$5.00]']";
-	public static final String ADD_TO_CART_BUTTON = "//input[@id='add-to-cart-button-1']";
+	public static final String ADD_TO_CART_BUTTON = "//button[@id='add-to-cart-button-1']";
 	public static final String DYNAMIC_CHECKBOX_BY_LABEL = "//label[text()='%s']/preceding-sibling::input";
 	
 	public static final String SHOPPING_CART_HEADER_MENU = "//li[@id='topcartlink']";
@@ -26,12 +26,12 @@ public class UserComputerPageUI {
 	
 	public static final String PRODUCT_QUANTITY = "//input[@id='product_enteredQuantity_1']";
 	public static final String PRODUCT_PRICE = "//div[@class='product-price']/span";
-	public static final String UPDATE_BUTTON = "//input[@id='add-to-cart-button-1']";
+	public static final String UPDATE_BUTTON = "//button[@id='add-to-cart-button-1']";
 	public static final String TOTAL_PRICE_IN_SHOPPING_CART = "//div[@class='totals']/strong";
 	
-	public static final String GO_TO_CART_BUTTON = "//input[@value='Go to cart']";
-	public static final String DYNAMIC_REMOVE_CHECKBOX_BY_SKU = "//span[text()='%s']/parent::td/preceding-sibling::td/input";
-	public static final String UPDATE_CART_BUTTON = "//input[@name='updatecart']";
+	public static final String GO_TO_CART_BUTTON = "//button[@class='button-1 cart-button']";
+	public static final String DYNAMIC_REMOVE_CHECKBOX_BY_SKU = "//span[text()='%s']/parent::td/following-sibling::td/button[@class='remove-btn']";
+	public static final String UPDATE_CART_BUTTON = "//button[@name='updatecart']";
 	public static final String NOTIFICATION_NO_DATA = "//div[@class='no-data']";
 
 	public static final String SORT_BY_DROPDOWN = "//select[@id='products-orderby']";
@@ -44,6 +44,11 @@ public class UserComputerPageUI {
 	public static final String NEXT_PAGE_BUTTON = "//li[@class='next-page']";
 	public static final String PREVIOUS_PAGE_BUTTON = "//li[@class='previous-page']";
 	public static final String CURRENT_PAGE_BUTTON = "//li[@class='current-page']";
+
+	public static final String RAM_DROPDOWN = "//select[@name='product_attribute_2']";
+	public static final String PROCESSOR_DROPDOWN = "//select[@name='product_attribute_1']";
+
+
 
 
 

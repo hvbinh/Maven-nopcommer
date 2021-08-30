@@ -52,15 +52,15 @@ public class UserComputerPO extends AbstractPage{
 		return PageGeneratorManager.getUserRecentlyViewedProductPO(driver);
 	}
 
-	public void selectProcessorByName(String dropdownName,String itemValue) {
-		waitToElementClickable(driver, AbstractPageUI.DYNAMIC_DROPDOWN_BY_NAME, dropdownName); 
-		selectDropdownByName(driver, dropdownName, itemValue);
+	public void selectProcessorByName(String itemValue) {
+		waitToElementClickable(driver, UserComputerPageUI.PROCESSOR_DROPDOWN);
+		selectItemInDropdown(driver, UserComputerPageUI.PROCESSOR_DROPDOWN, itemValue);
 		
 	}
 
 	public void selectRAMByName(String dropdownName,String itemValue) {
-		waitToElementClickable(driver, AbstractPageUI.DYNAMIC_DROPDOWN_BY_NAME, dropdownName); 
-		selectDropdownByName(driver, dropdownName, itemValue);
+		waitToElementClickable(driver, UserComputerPageUI.RAM_DROPDOWN);
+		selectItemInDropdown(driver, UserComputerPageUI.RAM_DROPDOWN, itemValue);
 		
 	}
 

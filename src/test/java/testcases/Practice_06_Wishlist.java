@@ -14,7 +14,7 @@ public class Practice_06_Wishlist extends AbstractTest {
 	WebDriver driver;
 	Select selectDay, selectMonth, selectYear;
 
-	String firstName, lastName, email, companyName, pass, confirmPass;
+	String firstName, lastName, email, companyName, pass;
 	String updateFirstName, updateLastName, updateEmail, updateCompanyName;
 
 	/**
@@ -60,18 +60,7 @@ public class Practice_06_Wishlist extends AbstractTest {
 
 	}
 
-	public void Login_In_With_Register_Email_And_correct_Password() {
-		homePage = PageGeneratorManager.getUserHomePage(driver);
-		loginPage = homePage.clickToLoginLink();
 
-		loginPage.inputToEmailTextbox(email);
-		System.out.println("email: "+email);
-		loginPage.inputToPasswordTextbox("123456");
-		loginPage.clickToLoginButton();
-
-		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
-		Assert.assertTrue(homePage.isLogoutLinkDisplayed());
-	}
 	@Test
 	public void TC_02_Add_Product_To_Cart_From_Wishlist() {
 		wishListPage.clickToAddToCartCheckbox();
@@ -170,7 +159,18 @@ public class Practice_06_Wishlist extends AbstractTest {
 
 	}
 
+	public void Login_In_With_Register_Email_And_correct_Password() {
+		homePage = PageGeneratorManager.getUserHomePage(driver);
+		loginPage = homePage.clickToLoginLink();
 
+		loginPage.inputToEmailTextbox(email);
+		System.out.println("email: "+email);
+		loginPage.inputToPasswordTextbox("123456");
+		loginPage.clickToLoginButton();
+
+		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
+		Assert.assertTrue(homePage.isLogoutLinkDisplayed());
+	}
 
 	public void Register() {
 		// 1
