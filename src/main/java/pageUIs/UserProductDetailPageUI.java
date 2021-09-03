@@ -11,7 +11,9 @@ public class UserProductDetailPageUI {
 	public static final String PRICE = "//div[@class='product-price']/span";
 
 	public static final String ADD_TO_WISHLIST_BUTTON = "//div[@class='add-to-wishlist']/button";
-	
+	public static final String PRODUCT_QUANTITY_TEXTBOX = "//input[@id='product_enteredQuantity_4']";
+	public static final String ADD_TO_CART_BUTTON = "//button[@id='add-to-cart-button-4']";
+
 	
 	
 }

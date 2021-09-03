@@ -4,8 +4,8 @@ public class GlobalConstants {
 	public static final String DEV_SERVER = "https://demo.nopcommerce.com";
 	public static final String TESTING_SERVER = "https://testing.nopcommerce.com";
 	public static final String STAGING_SERVER = "https://staging.nopcommerce.com";
-	public static final long SHORT_TIME = 5;
-	public static final long LONG_TIME = 30;
+	public static final long SHORT_TIME = 30;
+	public static final long LONG_TIME = 60;
 	public static final String ROOT_FOLDER = System.getProperty("user.dir");
 	public static final String OS_NAME = System.getProperty("os.name");
 	

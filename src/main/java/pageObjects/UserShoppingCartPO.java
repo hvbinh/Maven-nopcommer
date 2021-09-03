@@ -34,12 +34,14 @@ public class UserShoppingCartPO extends AbstractPage{
 		return PageGeneratorManager.getUserComputerPage(driver);
 	}
 
-	
 
+	public void clickToAgreeCheckbox() {
+		waitToElementClickable(driver, UserShoppingCartPageUI.AGREE_CHECKBOX);
+		clickToElement(driver, UserShoppingCartPageUI.AGREE_CHECKBOX);
+	}
 
-
-
-
-
-
+	public void clickToCheckOutButton() {
+		waitToElementClickable(driver, UserShoppingCartPageUI.CHECKOUT_BUTTON);
+		clickToElement(driver, UserShoppingCartPageUI.CHECKOUT_BUTTON);
+	}
 }

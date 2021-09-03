@@ -44,4 +44,16 @@ public class UserProductDetailPO extends AbstractPage{
 		waitToElementClickable(driver, UserProductDetailPageUI.ADD_TO_WISHLIST_BUTTON);
 		clickToElement(driver, UserProductDetailPageUI.ADD_TO_WISHLIST_BUTTON);
 	}
+
+	public void inputToProductQuantity(String number) {
+		waitToElementVisible(driver, UserProductDetailPageUI.PRODUCT_QUANTITY_TEXTBOX);
+		getElement(driver, UserProductDetailPageUI.PRODUCT_QUANTITY_TEXTBOX).clear();
+
+		sendkeyToElement(driver, UserProductDetailPageUI.PRODUCT_QUANTITY_TEXTBOX, number);
+	}
+
+	public void clickToAddToCartButton() {
+		waitToElementClickable(driver, UserProductDetailPageUI.ADD_TO_CART_BUTTON);
+		clickToElement(driver, UserProductDetailPageUI.ADD_TO_CART_BUTTON);
+	}
 }

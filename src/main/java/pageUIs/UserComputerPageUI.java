@@ -47,6 +47,7 @@ public class UserComputerPageUI {
 
 	public static final String RAM_DROPDOWN = "//select[@name='product_attribute_2']";
 	public static final String PROCESSOR_DROPDOWN = "//select[@name='product_attribute_1']";
+	public static final String DYNAMIC_ADD_TO_CART_BY_TEXT = "//div[@class='product-item']//a[text()='%s']/ancestor::div[@class='product-item']//button[contains(@class,'product-box-add-to-cart-button')]";
 
 
 

@@ -42,7 +42,7 @@ public class Practice_07_Order extends AbstractTest {
 
 	}
 
-	@Test
+	//@Test
 	public void TC_01_Add_Product_To_Cart() {
 		log.info("Add to cart - Step 1: Hover mouse to Computer header menu");
 		homePage.hoverToHeaderMenu("Computers");
@@ -100,7 +100,7 @@ public class Practice_07_Order extends AbstractTest {
 
 	}
 
-	@Test
+	//@Test
 	public void TC_02_Edit_Product_In_Shopping_Cart() {
 		log.info("Edit product - Step 01: Click on shoping cart link");
 		shoppingCartPage = computerPage.clickOnShoppingCartLink();
@@ -158,7 +158,7 @@ public class Practice_07_Order extends AbstractTest {
 		verifyTrue(computerPage.priceDisplay("$2,640.00"));
 
 	}
-	@Test
+	//@Test
 	public void TC_03_Remove_From_Cart() {
 		log.info("Remove frome cart - Step 01: Click on Go to cart button");
 		computerPage.clickOnGoToCartButton();
@@ -169,6 +169,50 @@ public class Practice_07_Order extends AbstractTest {
 		
 		log.info("Remove frome cart - Step 01: Verify that 'Your Shopping Cart is empty!' displays");
 		verifyTrue(computerPage.shoppingCartEmptyDisplay());
+	}
+	//@Test
+	public void TC_04_Update_Shopping_Cart() {
+
+		homePage = PageGeneratorManager.getUserHomePage(driver);
+
+		homePage.hoverToHeaderMenu("Computers");
+
+		computerPage = homePage.clickToSubmenu("Desktops");
+
+		computerPage.clickAddToCartByProductName("Lenovo IdeaCentre 600 All-in-One PC");
+
+		verifyTrue(computerPage.notificationSuccessMessageDisplay());
+
+		computerPage.closeNotificationSuccess();
+
+	}
+	@Test
+	public void TC_05_Order_Checkout() {
+
+		homePage = PageGeneratorManager.getUserHomePage(driver);
+
+		homePage.hoverToHeaderMenu("Computers");
+
+		computerPage = homePage.clickToSubmenu("Notebooks");
+
+		productDetailPage = computerPage.clickAddToCartByProductName("Apple MacBook Pro 13-inch");
+
+		productDetailPage.inputToProductQuantity("3");
+
+		productDetailPage.clickToAddToCartButton();
+
+		productDetailPage.closeNotificationSuccessMessage();
+
+		computerPage.hoverMouseToShoppingCartMenu();
+
+		shoppingCartPage = computerPage.clickOnGoToCartButton();
+
+		shoppingCartPage.clickToAgreeCheckbox();
+
+		shoppingCartPage.clickToCheckOutButton();
+
+
+
 	}
 
 	public void Login_In_With_Register_Email_And_correct_Password() {

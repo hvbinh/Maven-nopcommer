@@ -79,5 +79,9 @@ public class PageGeneratorManager {
 	{
 		return new UserEditProductInShoppingCartPO(driver);
 	}
+	public static UserCheckoutPO getUserCheckoutPO(WebDriver driver)
+	{
+		return new UserCheckoutPO(driver);
+	}
 
 }

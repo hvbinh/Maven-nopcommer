@@ -199,9 +199,10 @@ public class UserComputerPO extends AbstractPage{
 		return getElementText(driver, UserComputerPageUI.PRODUCT_PRICE);
 	}
 
-	public void clickOnGoToCartButton() {
+	public UserShoppingCartPO clickOnGoToCartButton() {
 		waitToElementClickable(driver, UserComputerPageUI.GO_TO_CART_BUTTON);
 		clickToElement(driver, UserComputerPageUI.GO_TO_CART_BUTTON);
+		return PageGeneratorManager.getUserShoppingCartPO(driver);
 	}
 
 	public void ClickOnRemoveCheckbox(String SKU) {
@@ -369,4 +370,18 @@ public class UserComputerPO extends AbstractPage{
 			return PageGeneratorManager.getUserProductDetailPO(driver);
 
 	}
+
+	public UserHomePO goToHomePage() {
+		navigateToUrlByJS(driver, "https://demo.nopcommerce.com/");
+		return PageGeneratorManager.getUserHomePage(driver);
+	}
+
+	public UserProductDetailPO clickAddToCartByProductName(String productName) {
+		waitToElementClickable(driver, UserComputerPageUI.DYNAMIC_ADD_TO_CART_BY_TEXT,productName);
+		clickToElement(driver, UserComputerPageUI.DYNAMIC_ADD_TO_CART_BY_TEXT,productName);
+		return PageGeneratorManager.getUserProductDetailPO(driver);
+
+	}
+
+
 }
