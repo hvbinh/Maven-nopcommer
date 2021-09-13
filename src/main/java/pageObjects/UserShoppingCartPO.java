@@ -40,8 +40,9 @@ public class UserShoppingCartPO extends AbstractPage{
 		clickToElement(driver, UserShoppingCartPageUI.AGREE_CHECKBOX);
 	}
 
-	public void clickToCheckOutButton() {
+	public UserCheckoutPO clickToCheckOutButton() {
 		waitToElementClickable(driver, UserShoppingCartPageUI.CHECKOUT_BUTTON);
 		clickToElement(driver, UserShoppingCartPageUI.CHECKOUT_BUTTON);
+		return PageGeneratorManager.getUserCheckoutPO(driver);
 	}
 }

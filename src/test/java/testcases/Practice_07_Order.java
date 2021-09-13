@@ -209,9 +209,26 @@ public class Practice_07_Order extends AbstractTest {
 
 		shoppingCartPage.clickToAgreeCheckbox();
 
-		shoppingCartPage.clickToCheckOutButton();
+        checkoutPage = shoppingCartPage.clickToCheckOutButton();
+
+        checkoutPage.selectCountry("Viet Nam");
+
+        checkoutPage.inputToCityTexbox("Ho Chi Minh");
+
+        checkoutPage.inputToAddress1("141 No Trang Long");
+
+        checkoutPage.inputToZipCode("700000");
+
+        checkoutPage.inputToPhoneNumber("0912345678");
+
+        checkoutPage.clickToAddressContinueButton();
+
+        checkoutPage.clickToShippingContinueButton();
+
+        checkoutPage.clickToPaymentContinueButton();
 
 
+        verifyTrue(checkoutPage.paymentInfoDisplay());
 
 	}
 
@@ -273,5 +290,6 @@ public class Practice_07_Order extends AbstractTest {
 	UserCompareProductPO compareProductPage;
 	UserRecentlyViewedProductPO recentlyViewedProductPage;
 	UserRegisterPO registerPage;
+	UserCheckoutPO checkoutPage;
 
 }
