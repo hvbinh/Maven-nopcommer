@@ -83,5 +83,9 @@ public class PageGeneratorManager {
 	{
 		return new UserCheckoutPO(driver);
 	}
+	public static UserOrderDetailPO getUserOrderDetailPO(WebDriver driver)
+	{
+		return new UserOrderDetailPO(driver);
+	}
 
 }

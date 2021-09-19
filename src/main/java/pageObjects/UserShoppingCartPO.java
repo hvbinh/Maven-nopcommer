@@ -45,4 +45,34 @@ public class UserShoppingCartPO extends AbstractPage{
 		clickToElement(driver, UserShoppingCartPageUI.CHECKOUT_BUTTON);
 		return PageGeneratorManager.getUserCheckoutPO(driver);
 	}
+
+    public void inputToQuantityTextbox(String number) {
+		waitToElementVisible(driver, UserShoppingCartPageUI.SHOPPING_CART_NUMBER);
+		sendkeyToElement(driver, UserShoppingCartPageUI.SHOPPING_CART_NUMBER, number);
+    }
+
+	public void clickToUpdateShoppingCartButton() {
+		waitToElementClickable(driver, UserShoppingCartPageUI.UPDATE_SHOPPING_CART_BUTTON);
+		clickToElement(driver, UserShoppingCartPageUI.UPDATE_SHOPPING_CART_BUTTON);
+	}
+
+	public void clickToEstimateShippingButton() {
+		waitToElementClickable(driver, UserShoppingCartPageUI.ESTIMATE_SHIPPING_BUTTON);
+		clickToElement(driver, UserShoppingCartPageUI.ESTIMATE_SHIPPING_BUTTON);
+	}
+
+	public void clickToNextDayAirText() {
+		waitToElementClickable(driver, UserShoppingCartPageUI.NEXT_DAY_AIR_TEXT);
+		clickToElement(driver, UserShoppingCartPageUI.NEXT_DAY_AIR_TEXT);
+	}
+
+	public void clickToApplyShippingButton() {
+		waitToElementClickable(driver, UserShoppingCartPageUI.APPLY_SHIPPING_BUTTON);
+		clickToElement(driver, UserShoppingCartPageUI.APPLY_SHIPPING_BUTTON);
+	}
+
+	public String getQuantityValue() {
+		waitToElementVisible(driver, UserShoppingCartPageUI.SHOPPING_CART_NUMBER);
+		return getElementAtribute(driver, UserShoppingCartPageUI.SHOPPING_CART_NUMBER, "value");
+	}
 }

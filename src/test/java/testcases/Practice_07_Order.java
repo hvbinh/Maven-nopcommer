@@ -230,7 +230,40 @@ public class Practice_07_Order extends AbstractTest {
 
         verifyTrue(checkoutPage.paymentInfoDisplay());
 
+        checkoutPage.clickToConfirmButton();
+
+        checkoutPage.clickToConfirmOderbutton();
+
+		verifyEquals(checkoutPage.orderSussucessTextDisplay(),"Your order has been successfully processed!");
+
 	}
+    @Test
+    public void TC_06_ReOrder() {
+        homePage = PageGeneratorManager.getUserHomePage(driver);
+
+        customerInforPage = homePage.clickToMyAccountLink();
+
+        orderPage = customerInforPage.clickToOrder();
+
+		orderDetailPage = orderPage.clickToDetailButton();
+
+		shoppingCartPage = orderDetailPage.clickToDetailButton();
+
+		shoppingCartPage.inputToQuantityTextbox("10");
+
+		shoppingCartPage.clickToUpdateShoppingCartButton();
+
+		shoppingCartPage.clickToEstimateShippingButton();
+
+		shoppingCartPage.clickToNextDayAirText();
+
+		shoppingCartPage.clickToApplyShippingButton();
+
+		verifyEquals(shoppingCartPage.getQuantityValue(),"10");
+
+
+
+    }
 
 	public void Login_In_With_Register_Email_And_correct_Password() {
 		homePage = PageGeneratorManager.getUserHomePage(driver);
@@ -291,5 +324,8 @@ public class Practice_07_Order extends AbstractTest {
 	UserRecentlyViewedProductPO recentlyViewedProductPage;
 	UserRegisterPO registerPage;
 	UserCheckoutPO checkoutPage;
+	UserCustomerInforPO customerInforPage;
+	UserOrdersPO orderPage;
+	UserOrderDetailPO orderDetailPage;
 
 }

@@ -59,4 +59,19 @@ public class UserCheckoutPO extends AbstractPage{
 		waitToElementClickable(driver, UserCheckoutPageUI.PAYMENT_CONTINUE_BUTTON);
 		clickToElement(driver, UserCheckoutPageUI.PAYMENT_CONTINUE_BUTTON);
 	}
+
+	public void clickToConfirmButton() {
+		waitToElementClickable(driver, UserCheckoutPageUI.PAYMENT_INFORMATION_CONTINUE_BUTTON);
+		clickToElement(driver, UserCheckoutPageUI.PAYMENT_INFORMATION_CONTINUE_BUTTON);
+	}
+
+	public void clickToConfirmOderbutton() {
+		waitToElementClickable(driver, UserCheckoutPageUI.CONFIRM_ORDER_BUTTON);
+		clickToElement(driver, UserCheckoutPageUI.CONFIRM_ORDER_BUTTON);
+	}
+
+	public String orderSussucessTextDisplay() {
+		waitToElementVisible(driver, UserCheckoutPageUI.ORDER_SUCCESS_TEXT);
+		return getElementText(driver, UserCheckoutPageUI.ORDER_SUCCESS_TEXT);
+	}
 }

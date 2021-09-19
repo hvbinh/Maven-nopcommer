@@ -22,4 +22,9 @@ public class UserOrdersPO extends AbstractPage{
 		return PageGeneratorManager.getUserAddressesPage(driver);
 	}
 
+    public UserOrderDetailPO clickToDetailButton() {
+		waitToElementClickable(driver, UserOrdersPageUI.DETAIL_BUTTON);
+		clickToElement(driver, UserOrdersPageUI.DETAIL_BUTTON);
+		return PageGeneratorManager.getUserOrderDetailPO(driver);
+    }
 }

@@ -10,6 +10,9 @@ public class UserCheckoutPageUI {
 	public static final String SHIPPING_CONTINUE_BUTTON = "//button[@class='button-1 shipping-method-next-step-button']";
 	public static final String PAYMENT_CONTINUE_BUTTON = "//button[@class='button-1 payment-method-next-step-button']";
 	public static final String PAYMENT_INFO_TEXT = "(//div[@class='info']//p)[3]";
+	public static final String PAYMENT_INFORMATION_CONTINUE_BUTTON = "//button[@class='button-1 payment-info-next-step-button']";
+	public static final String CONFIRM_ORDER_BUTTON = "//button[@class='button-1 confirm-order-next-step-button']";
+	public static final String ORDER_SUCCESS_TEXT = "//div[@class='section order-completed']/div[@class='title']/strong";
 
 
 	

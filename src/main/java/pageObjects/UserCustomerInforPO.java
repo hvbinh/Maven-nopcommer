@@ -360,4 +360,10 @@ public class UserCustomerInforPO extends AbstractPage{
 		waitToElementClickable(driver, UserCustomerInforPageUI.CLOSE_MESSAGE_ICON);
 		clickToElement(driver, UserCustomerInforPageUI.CLOSE_MESSAGE_ICON);
 	}
+
+    public UserOrdersPO clickToOrder() {
+		waitToElementClickable(driver, UserCustomerInforPageUI.ORDER_LEFT_MENU);
+		clickToElement(driver, UserCustomerInforPageUI.ORDER_LEFT_MENU);
+		return PageGeneratorManager.getUserOrdersPage(driver);
+    }
 }

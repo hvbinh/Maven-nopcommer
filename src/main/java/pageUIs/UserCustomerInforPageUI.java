@@ -54,6 +54,7 @@ public class UserCustomerInforPageUI {
 	public static final String REVIEW_RATING_OPTION = "//div[@class='product-review-item'][1]//div[@class='rating']/div";
 	public static final String REVIEW_PRODUCT_LEFT_MENU = "//a[@href='/customer/productreviews']";
 	public static final String CLOSE_MESSAGE_ICON = "//span[@title='Close']";
+	public static final String ORDER_LEFT_MENU = "//li[@class='customer-orders inactive']/a";
 
 
 	
